@@ -23,6 +23,7 @@ public class CloudgatewayApplication {
 				.routes()
 					.route(r -> r.path("/customers/**").uri("lb://customers"))
 					.route(r -> r.path("/cards/**").uri("lb://cards"))
+					.route(r -> r.path("/credits-assessor/**").uri("lb://creditassessor"))
 				.build();
 	}
 
